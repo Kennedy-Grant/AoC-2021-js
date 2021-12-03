@@ -1,0 +1,17 @@
+{
+  "name": "aoc-2021-js-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Day01": "ts-node ./src/Day01.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "ts-node": "^10.4.0"
+  }
+}

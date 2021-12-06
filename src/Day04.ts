@@ -31,15 +31,22 @@ const main = () => {
             
         })
         cards.forEach(card => {
+            if (winningCards.some(wCard => wCard === card)) {
+                return;
+            }
+
             card.forEach(row => {
                 const win = row.every(space => {
                     return space.visited
                 })
                 if (win) {
-                    winningCards.push(card);
+                    if (!winningCards.some(wCard => card === wCard)) {
+                        winningCards.push(card);
+                    }
+                    console.log(winningCards.length);
                     winningCall = call;
                 }
-            })
+            });
             for (let rowIndex = 0; rowIndex < card.length; rowIndex++) {
                 const column = [];
                 for (let columnIndex = 0; columnIndex < card[rowIndex].length; columnIndex++) {
@@ -49,21 +56,21 @@ const main = () => {
                     return space.visited
                 })
                 if (win) {
-                    winningCards.push(card);
+                    if (!winningCards.some(wCard => card === wCard)) {
+                        winningCards.push(card);
+                    }
+                    console.log(winningCards.length);
                     winningCall = call;
                     return;
                 }
             }
-        })
+        });
 
-        const newCards = cards.filter(card => winningCards.some(wCard => wCard === card))
-        if (newCards.length === 1 || newCards.length === 0) {
-            return true; 
-        } else {
-            cards = newCards
+        if (winningCards.length === 100) {
+            return true;
         }
     })
-    cards[0].forEach(row => {
+    winningCards[99].forEach(row => {
         row.forEach(space => {
             if (!space.visited) {
                 sum += parseInt(space.value);

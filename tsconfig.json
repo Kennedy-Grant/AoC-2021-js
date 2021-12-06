@@ -1,0 +1,27 @@
+{
+  "ts-node": {
+    "cwd": "C:\\Users\\Kennedy\\Documents\\aoc-2021-js-template",
+    "projectSearchDir": "C:\\Users\\Kennedy\\Documents\\aoc-2021-js-template",
+    "require": []
+  },
+  "compilerOptions": {
+    "lib": [
+      "es2021"
+    ],
+    "module": "commonjs",
+    "target": "es2021",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "node"
+    ],
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": true,
+    "declaration": false,
+    "noEmit": false,
+    "outDir": "./.ts-node"
+  }
+}

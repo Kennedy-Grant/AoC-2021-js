@@ -8,7 +8,10 @@
     "Day02": "ts-node ./src/Day02.ts",
     "Day03": "ts-node ./src/Day03.ts",
     "Day04": "ts-node ./src/Day04.ts",
-    "Day05": "ts-node ./src/Day05.ts"
+    "Day05": "ts-node ./src/Day05.ts",
+    "Day06": "ts-node ./src/Day06.ts",
+    "Day07": "ts-node ./src/Day07.ts",
+    "Day09": "ts-node ./src/Day09.ts"
   },
   "author": "",
   "license": "ISC",

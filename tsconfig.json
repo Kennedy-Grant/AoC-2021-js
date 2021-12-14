@@ -1,9 +1,4 @@
 {
-  "ts-node": {
-    "cwd": "C:\\Users\\Kennedy\\Documents\\aoc-2021-js-template",
-    "projectSearchDir": "C:\\Users\\Kennedy\\Documents\\aoc-2021-js-template",
-    "require": []
-  },
   "compilerOptions": {
     "lib": [
       "es2021"
